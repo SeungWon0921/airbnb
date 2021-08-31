@@ -1,7 +1,12 @@
 @import url(./layout_base.css);
-
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /* 공통 부분 */
-body { font-family: 'twayair'; font-size: 16px; height: 100%; color: #444; white-space: normal; word-wrap: break-word; line-height: 1; }
+body { font-family: 'Cafe24SsurroundAir'; font-size: 16px; height: 100%; color: #444; white-space: normal; word-wrap: break-word; line-height: 1; }
 * { margin: 0; padding: 0; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -65,29 +70,29 @@ header .header_area .logo h1 a {position: relative; display: block;width: 100px;
 
 .sitebar {position: relative; width: 850px;height: 67px;  border-radius: 50px; margin-top: 10px; background-color: #fff;box-sizing: border-box; text-align: center;margin: 0 auto; }
 .sitebar ul {float: left; text-align: left;box-sizing: border-box; margin: 0 auto; }
-.sitebar ul li {position: relative; float: left;  font-size: 12px;font-weight: bold;  width: 200px; height: 32px; box-sizing: border-box; }
-.sitebar ul li::after {position: relative; content: "|"; font-size: 40px;font-weight: 100; color: #ccc; bottom: 20px;right: 10px;}
+.sitebar ul li {position: absolute; float: left;  font-size: 12px;font-weight: bold;  width: 200px; height: 32px; box-sizing: border-box; }
+.sitebar ul li::after { position: relative; content: "|"; font-size: 40px;font-weight: lighter; color: #ccc; bottom: 20px;right: 10px;bottom: 10px;}
 .sitebar ul li:first-child::after { content: "";}
-.sitebar ul li a{position:relative; top:15px; color: #000; left: 25px; top: 17px;}
+.sitebar ul li a{position:relative; top:15px; color: #000; left: 25px; top: 20px;}
 .sitebar ul li:first-child a { left: 30px; }
 
-.sitebar ul li p{position: relative; color: rgb(182, 179, 179); font-weight: lighter;font-size: 14px; padding-left: 25px;top: 20px;}
+.sitebar ul li p{position: relative; color: rgb(182, 179, 179); font-weight: lighter;font-size: 14px; padding-left: 25px;top: 25px;}
 .sitebar ul li:first-child p { padding-left: 30px;}
 .sitebar ul li:nth-child(1) {width: 250px; }
-.sitebar ul li:nth-child(2) {width: 200px; }
-.sitebar ul li:nth-child(3) {width: 200px; }
-.sitebar ul li:nth-child(4) {width: 200px; }
+.sitebar ul li:nth-child(2) {width: 200px;left: 250px; }
+.sitebar ul li:nth-child(3) {width: 200px;left: 450px; }
+.sitebar ul li:nth-child(4) {width: 200px;left: 650px; }
 
-.sitebar ul li:nth-child(1):hover{ width: 250px;height: 67px; background-color: #ccc; border-radius: 50px; }
-.sitebar ul li:nth-child(2):hover{ width: 200px;height: 67px; background-color: #ccc; border-radius: 50px; }
+.sitebar ul li:nth-child(1):hover{ width: 260px;height: 67px; background-color: #ccc; border-radius: 50px; }
+.sitebar ul li:nth-child(2):hover{ width: 220px;height: 67px; background-color: #ccc; border-radius: 50px;}
 .sitebar ul li:nth-child(3):hover{ width: 200px;height: 67px; background-color: #ccc; border-radius: 50px; }
 .sitebar ul li:nth-child(4):hover{ width: 200px;height: 67px; background-color: #ccc; border-radius: 50px; }
 
 .sitebar ul li img {position: absolute; left: 110px;line-height: 50px; top: -5px; width: 50px;}
 
-.finder { position: absolute; top: 440px; left: 40%;}
-.finder p {display: block; font-size: 18px; letter-spacing: -1px;font-weight: 500; }
-.finder p+p {width: 100px; position: relative; font-size: 20px;  text-align: center; top: 40px;padding: 20px 40px; border-radius: 35px; background-color: #fff; left: 80px; text-shadow: #ccc 10px; box-shadow:1px 4px 7px #ccc ;}
+.finder { position: relative; top: 300px;text-align: center;}
+.finder p {position: relative; font-size: 18px; letter-spacing: -1px;font-weight: 500;left: 20px;}
+.finder p+p {width: 100px; position: relative; font-size: 20px;  text-align: center; top: 40px;padding: 20px 40px; border-radius: 35px; background-color: #fff; left: 45%; text-shadow: #ccc 10px; box-shadow:1px 4px 7px #ccc ;}
 .finder .click:hover { box-shadow: 1px 4px 12px #ccc;}
 .finder p+p a{background:linear-gradient(to right,rgb(151, 30, 145),rgb(84, 26, 107)); background-clip: text;-webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
