@@ -86,12 +86,57 @@ header .header_area .logo h1 a {position: relative; display: block;width: 100px;
 
 .finder { position: absolute; top: 440px; left: 40%;}
 .finder p {display: block; font-size: 18px; letter-spacing: -1px;font-weight: 500; }
-.finder p+p {width: 100px; position: relative; font-size: 20px;  text-align: center; top: 40px;padding: 20px 40px; border-radius: 35px; background-color: #fff; left: 80px; text-shadow: #ccc 10px; box-shadow:1px 4px 2px #ccc ;}
+.finder p+p {width: 100px; position: relative; font-size: 20px;  text-align: center; top: 40px;padding: 20px 40px; border-radius: 35px; background-color: #fff; left: 80px; text-shadow: #ccc 10px; box-shadow:1px 4px 7px #ccc ;}
+.finder .click:hover { box-shadow: 1px 4px 12px #ccc;}
 .finder p+p a{background:linear-gradient(to right,rgb(151, 30, 145),rgb(84, 26, 107)); background-clip: text;-webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-.container{ position: absolute; left: 5%; width: 1050px; margin: 0 auto;}
-.container h2{position: relative; font-size: 35px; top: 30px; font-weight: 500; }
-.container .near_list div {position: relative;  width: 250px; height:65px; top: 50px; float: left; margin-right: 10px;margin-bottom: 20px; }
+.container {padding: 0 5%;}
+.container h2 { position: relative; font-size: 35px; top: 30px; font-weight: 500;}
+.container .near_list li { position: relative;  width: 24%; height:65px; top: 50px; float: left; margin-right: 10px;margin-bottom: 20px; }
 .container .near_list div img { width: 65px; border-radius: 10px; }
-.container .near_list div p {position: relative; left: 90px; color: #000;bottom: 55px;}
+.container .near_list div p {position: relative; left: 90px; color: #000;bottom: 55px; }
 .container .near_list div p+p {position: relative;font-size: 15px; font-weight: 350; margin-top: 4px; } 
+
+.container .anywhere { position: relative; top: 60px;}
+.container .anywhere .any_content li { position: relative; box-sizing: border-box; width: 25%; float: left; padding-left: 20px; top: 55px; left: -20px; }
+.container .anywhere .any_content li img { width: 100%; border-radius: 10px; }
+.container .anywhere .any_content li p {color: #000; font-size: 17px; font-weight: 500; margin-top: 5px;}
+
+.container .host {height: 480px; position: relative; background: url(../images/2595054e-d1d9-4fde-8046-58d51fcb3164.jpg) no-repeat; top: 180px; background-size: cover; border-radius: 17px; }
+
+.container .host h2 { color: #fff; }
+.container .host h2 { position: relative; top: 140px; left: 80px; font-size: 50px; }
+.container .host .txt { position: relative; top: 150px;left: 80px; font-size: 18px;}
+.container .host .btn_host { position: relative; top: 180px;left: 80px; width: 150px;height: 45px; line-height: 50px;text-align: center; border: 1px solid #fff; border-radius: 10px; background-color: #fff;}
+.container .host .btn_host p { color: #000; font-weight: 500; }
+
+.container .entertain_area { position: relative; top: 240px;}
+.container .entertain_area h2 { font-size: 30px; font-weight: bold; } 
+.container .entertain_area ul li {box-sizing: border-box; position: relative; width: 33.3%; padding-right: 15px; float: left; top: 60px;}
+.container .entertain_area ul li img { width: 100%; border-radius: 10px; }
+.container .enter_content p { position: relative; top: 3px;font-size: 19px; color: #000; }
+.container .enter_content span { position: relative; top: 5px;font-size: 14px;font-weight: 350; color: #000; }
+.container .enter_content .chu { position:absolute;bottom: 450px; left: 20px; width: 30px;height: 20px; line-height: 15px; background-color: #fff;text-align: center; border-radius: 3px; }
+.container .enter_content .chu p { font-size: 11px; font-weight: bold; }
+
+footer { padding:45px 5% ; position: relative ; background-color: rgb(250, 246, 246); top: 380px; height: 490px; }
+.foot_area { height: 470px; border-bottom: 1px solid #ccc;}
+footer .foot_area ul { width: 25%; float: left; }
+footer .foot_area ul li { padding-bottom: 20px; font-size: 12px;font-weight: bold;}
+footer .foot_area ul li a { color: #000; font-weight: 350;font-size: 13px; } 
+footer .foot_area ul li a:hover {text-decoration: underline; }
+
+footer .copyright { padding-top: 22px;}
+footer .copyright ul li { float: left; padding-right: 4px; font-size: 14px;}
+footer .copyright ul li::after {content: "·";padding: 0 8px;}
+footer .copyright ul li:last-child::after{padding-right: 0;content: ""; }
+footer .copyright ul li a { color: #000; vertical-align: middle;}
+
+footer .detail {position: relative; left: 120px;}
+footer .detail ul li {float: left; padding-right: 50px;}
+footer .detail ul li a { color: #000; vertical-align: middle; font-size: 14px;}
+footer .detail ul li .lan { bottom: 3px; }
+footer .detail ul li a+a {position: relative; color: #000; text-decoration: underline;left: 10px; font-size: 14px;}
+footer .detail ul li img {position: relative; width: 20px; }
+
+footer .detail .sns li:first-child {padding-left: 55px;}
